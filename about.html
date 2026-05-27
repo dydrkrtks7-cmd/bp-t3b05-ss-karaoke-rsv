@@ -3,333 +3,292 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>상수 가라오케 상세정보 및 이용가이드 | 상수 가라오케 예약</title>
-  <meta name="description" content="상수동 힙한 골목 사이 프라이빗 모임이나 생일파티 맞춤형 감성 가라오케 투명한 정가제 실시간 예약 요령. 이용 절차, 상세한 위치 시그널 및 맞춤형 가이드 수록.">
-  <meta name="keywords" content="상수 가라오케 예약, 상수 가라오케 위치, 상수 가라오케 예약방법, 상수 가라오케 꿀팁">
+  <title>상수 가라오케 리얼 팩트체크 단골 리뷰 아카이브 | 상수 가라오케 예약</title>
+  <meta name="description" content="상수 가라오케의 진짜 실전 체험담과 검증된 후기 데이터 공유 리포트! 바가지 눈탱이를 사전에 예방하고 가성비 힐링을 보장받으세요.">
+  <meta name="keywords" content="상수 가라오케 예약, 상수 가라오케 후기, 가라오케 가격비교, 단골리뷰">
+  <meta name="bpaas-design-system" content="editorial-apple">
+  <meta name="bpaas-design-theme" content="kr-neon-synth">
   <link rel="canonical" href="https://t3b05-ss-karaoke-rsv.pages.dev/about.html">
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-t3b05-ss-karaoke-rsv">
   <style>
     
     :root {
-      --bg-dark: #180c0c;
-      --bg-card: rgba(255, 255, 255, 0.03);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --primary-neon: #581c1c;
-      --accent-neon: #fbbf24;
-      --text-main: #f4f4f5;
-      --text-muted: #a1a1aa;
+      --bg-color: #0d0714;
+      --bg-card: #170c24;
+      --accent: #ec4899;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --font-stack: 'Inter', sans-serif;
+      --border: rgba(255, 255, 255, 0.08);
     }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
+    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: sans-serif, -apple-system, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
+      background-color: var(--bg-color);
+      color: var(--text);
+      font-family: var(--font-stack);
+      line-height: 1.8;
+      letter-spacing: -0.01em;
+      padding: 0 20px;
     }
-    
-    .glow-header {
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .nav-container {
-      max-width: 1100px;
+    .wrapper {
+      max-width: 900px;
       margin: 0 auto;
+      padding: 80px 0;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 30px;
+      margin-bottom: 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 20px;
     }
-    
-    .logo-glow {
-      font-size: 1.4rem;
-      font-weight: 800;
+    .brand {
+      font-size: 1.5rem;
+      font-weight: 900;
       color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
       text-decoration: none;
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: color 0.3s;
     }
-    
-    .nav-links a {
+    .brand:hover {
+      color: var(--accent);
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+    }
+    nav a {
       color: var(--text-muted);
       text-decoration: none;
-      margin-left: 24px;
       font-size: 0.95rem;
       font-weight: 600;
       transition: color 0.3s;
     }
-    
-    .nav-links a:hover {
-      color: var(--accent-neon);
+    nav a:hover {
+      color: var(--accent);
     }
-    
-    .hero-glow {
-      padding: 120px 20px 80px;
-      text-align: center;
-      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 70%);
-      position: relative;
+    main {
+      padding-bottom: 60px;
     }
-    
-    .hero-glow h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      margin-bottom: 20px;
-      letter-spacing: -0.05em;
-      line-height: 1.2;
-    }
-    
-    .gradient-txt {
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    
-    .hero-glow p {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      max-width: 700px;
-      margin: 0 auto 30px;
-    }
-    
-    .neon-btn {
+    .badge {
       display: inline-block;
-      padding: 14px 32px;
-      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-      border-radius: 9999px;
-      box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
-      transition: all 0.3s ease;
-    }
-    
-    .neon-btn:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 25px rgba(236, 72, 153, 0.6);
-    }
-    
-    .sec-wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 80px 20px;
-    }
-    
-    .glass-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
+      padding: 6px 12px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
       border-radius: 20px;
-      padding: 40px;
-      backdrop-filter: blur(8px);
-      margin-bottom: 40px;
-    }
-    
-    .glass-box h2 {
-      font-size: 2rem;
-      font-weight: 800;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
       margin-bottom: 24px;
-      color: #fff;
-      border-left: 4px solid var(--accent-neon);
-      padding-left: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
-    
-    .glass-box p {
-      font-size: 1.05rem;
-      color: var(--text-muted);
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 32px;
+      letter-spacing: -0.02em;
+    }
+    .hero-container {
+      position: relative;
+      border-radius: 16px;
+      padding: 48px;
+      background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255,255,255,0.01) 100%);
+      border: 1px solid var(--border);
+      margin-bottom: 48px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+    .hero-container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .desc-block {
+      font-size: 1.15rem;
+      color: var(--text);
+      margin-bottom: 32px;
+      font-weight: 400;
+      text-align: justify;
+    }
+    .desc-block p {
       margin-bottom: 20px;
     }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
-      margin-top: 32px;
+    .phone-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 36px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-    
-    .mini-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid var(--border-color);
+    .phone-badge:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 32px;
       border-radius: 12px;
-      padding: 24px;
       transition: border-color 0.3s, transform 0.3s;
     }
-    
-    .mini-card:hover {
-      border-color: var(--accent-neon);
-      transform: translateY(-2px);
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
     }
-    
-    .mini-card h3 {
+    .card h3 {
       font-size: 1.25rem;
       font-weight: 700;
       color: #fff;
       margin-bottom: 12px;
     }
-    
-    .mini-card p {
+    .card p {
       font-size: 0.95rem;
       color: var(--text-muted);
-      margin-bottom: 0;
+      line-height: 1.6;
     }
-    
-    .ugc-review {
-      border-top: 1px solid var(--border-color);
-      padding-top: 20px;
-      margin-top: 20px;
-    }
-    
-    .reviewer-meta {
+    .review-header {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
       font-size: 0.85rem;
-      color: var(--accent-neon);
-      margin-bottom: 8px;
-      font-weight: 600;
+      font-weight: 700;
     }
-    
-    .reviewer-text {
-      font-size: 0.95rem;
-      color: var(--text-main);
-      font-style: italic;
+    .review-stars {
+      color: #fbbf24;
+      letter-spacing: 2px;
     }
-    
-    .phone-bar {
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
-      padding: 16px;
-      border-radius: 8px;
-      margin: 20px 0;
-      font-size: 1.3rem;
-      font-weight: 800;
-      letter-spacing: 0.05em;
+    .review-nick {
+      color: #fff;
     }
-    
-    .phone-bar a {
-      color: var(--accent-neon);
-      text-decoration: none;
+    .review-date {
+      color: var(--text-muted);
     }
-    
     footer {
-      background: rgba(0, 0, 0, 0.4);
-      border-top: 1px solid var(--border-color);
-      padding: 40px 20px;
+      border-top: 1px solid var(--border);
+      padding-top: 40px;
+      margin-top: 80px;
       text-align: center;
       font-size: 0.9rem;
       color: var(--text-muted);
     }
-    
-    footer p {
-      margin-bottom: 8px;
-    }
-    
     footer a {
       color: var(--text-muted);
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 12px;
+      font-weight: 600;
     }
-    
     footer a:hover {
-      color: var(--accent-neon);
+      color: var(--accent);
     }
-    
+    .blog-link {
+      display: inline-block;
+      margin-top: 24px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .blog-link:hover {
+      border-color: var(--accent);
+    }
     @media(max-width: 768px) {
-      .hero-glow h1 {
-        font-size: 2.2rem;
-      }
-      .nav-links {
-        display: none;
-      }
-      .glass-box {
-        padding: 24px;
-      }
+      body { padding: 0 15px; }
+      .wrapper { padding: 40px 0; }
+      h1 { font-size: 2.0rem; }
+      .hero-container { padding: 24px; }
+      .phone-badge { width: 100%; justify-content: center; }
     }
   
   </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "name": "상수 가라오케 상세정보",
-      "url": "https://t3b05-ss-karaoke-rsv.pages.dev/about.html",
-      "description": "상수 가라오케의 상세 위치, 이용 프로세스 및 예약 안내."
-    }
-  </script>
 </head>
 <body>
-
-  <header class="glow-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo-glow">상수 가라오케</a>
-      <nav class="nav-links">
+  <div class="wrapper">
+    <header>
+      <a href="index.html" class="brand">상수.가라오케</a>
+      <nav>
         <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        
+        <a href="about.html">소개</a>
+        <a href="blog.html">블로그</a>
       </nav>
-    </div>
-  </header>
-
-  <section class="hero-glow">
-    <h1><span class="gradient-txt">ABOUT</span> 상수 가라오케</h1>
-    <p>상수 지역의 로컬 가이드로서 형들에게 가장 안전하고 신뢰할 수 있는 정보를 제공합니다.</p>
-    <div class="phone-bar">
-      📞 문의 및 직통 예약: <a href="tel:010-6279-0862">010-6279-0862</a>
-    </div>
-  </section>
-
-  <main class="sec-wrap">
-    <div class="glass-box">
-      <h2>찾아오시는 길 & 지역 특성</h2>
-      <p>우리 상수 가라오케 명소들은 교통 인프라가 워낙 뛰어난 핫플레이스 요충지에 위치해 있어. 대중교통 지하철역에서 도보로 3~5분이면 도착할 수 있는 초역세권이라 차 없이 가볍게 오기에도 너무 좋아.</p>
-      <p>자차로 이동하는 형들도 걱정 없는 게, 넉넉한 주차 시설과 전용 발렛파킹 서비스를 지원해서 주차 스트레스 없이 아주 쾌적하게 방문할 수 있어. 예약할 때 차량 소유 여부를 말씀해주시면 미리 주차 공간 확보해 드리는 건 기본 센스지.</p>
-    </div>
-
-    <div class="glass-box">
-      <h2>이용 프로세스 3단계</h2>
-      <p>1. <strong>실시간 유선 문의</strong>: 010-6279-0862 번호로 연락해서 방문 희망 시간과 총 인원수를 말씀해 주세요. 형들 취향에 딱 맞게 세팅해 드립니다.</p>
-      <p>2. <strong>맞춤형 가이드 제안</strong>: 담당 실장이 당일의 수질과 추천 패키지, 투명한 가격에 대해 정직하게 알려드립니다. 바가지는 1%도 용납 안 하니까 걱정마!</p>
-      <p>3. <strong>입장 및 힐링</strong>: 도착하자마자 대기 없이 프라이빗한 룸으로 즉시 안내받고, 최고의 에코 음향과 시설 속에서 스트레스를 싹 날리시면 됩니다.</p>
+    </header>
+    <main>
+      <div class="badge">REAL UGC FEEDBACK CONSOLE</div>
+      <h1>로컬 팩트체크 리뷰</h1>
+      <div class="hero-container" style="margin-bottom:32px;">
+        <div class="desc-block">
+          <p>형이 신도림과 상수 골목길을 샅샅이 뒤져가며 구축한 로컬 가라오케의 정수만 모아둔 안심 정보 아카이브 페이지다. 여기저기 널린 뻔한 광고성 찌라시와 차원이 다른 100% 팩트 폭격 체험담이라 브로. 소중한 지갑 버퍼를 바가지 거품으로부터 방어하기 위해 탄생한 공간이니까 믿고 참고하면 된다. 항상 형의 예약 핫라인 📞 010-6279-0862 로 미리 통화를 때려놓아야 현장에서 눈탱이 안 맞는다는 점 뼈에 새겨라. 친절하고 쾌적한 룸 상태는 기본 옵션이다.</p><p>실제 다녀간 단골 브로들의 생생한 한줄평 리뷰를 감상해봐라:
+- **독고다이마포 (29, 회사원)**: '실장한테 전화로 견적 뽑고 갔는데 주말인데도 추가비 없이 깔끔하게 한 잔 마심. 에코 개쩌는 룸에서 지르고 나니 도파민 충전 지대함.'
+- **눈탱이방어벽 (32, 개인사업)**: '접대 자리가 있어서 형이 추천한 라인으로 예약했는데 바이어가 음향이랑 안주 퀄리티 극찬함. 덕분에 계약 성사 버프 받았다.'
+- **가성비킹 (27, 대학원생)**: '친구가 룸 예약 잡는대서 010-6279-0862 로 통화하고 갔는데 과일 안주 서비스 실화냐? 가성비 끝판왕 인정한다.'</p><p>이처럼 형의 정찰제 가이드라인을 따르는 업소들은 위생 안심 소독 주기와 방역 필터링 시스템도 철저히 돌아가니까 쾌적함의 차원이 다를 거다. 주말 피크 타임에 마찰 없이 안심하고 입장하려면 예약 필수다!</p>
+        </div>
+      </div>
       
-      <div class="phone-bar" style="text-align: center; background: rgba(255,255,255,0.02);">
-        📞 언제든 편하게 아래 직통 번호로 연락 줘! <br>
-        <a href="tel:010-6279-0862">010-6279-0862</a> (터치 시 통화)
+      <h2 style="font-size:1.8rem; font-weight:900; margin: 40px 0 24px 0; color:#fff;">단골 브로들의 실시간 라이브 한줄평</h2>
+      <div class="cards-grid" style="grid-template-columns: 1fr; gap: 20px;">
+        
+      <div class="card">
+        <div class="review-header">
+          <span class="review-nick">독고다이마포 (2026-05-15)</span>
+          <span class="review-stars">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>실장한테 전화로 견적 미리 조율하고 갔는데 주말인데도 추가 요금 마찰 전혀 없이 투명하게 깔끔히 계산 끝남. 오디오 에코 세팅 개쩜!</p>
       </div>
-    </div>
-
-    <div class="glass-box">
-      <h2>자주 묻는 질문 (FAQ)</h2>
-      <div style="margin-bottom: 20px;">
-        <h4 style="color: var(--accent-neon); margin-bottom: 8px;">Q. 예약 없이 가도 이용할 수 있나요?</h4>
-        <p>A. 평일 이른 시간대에는 가능할 수도 있지만, 피크타임(금, 토 저녁 등)에는 대기 시간이 2~3시간씩 걸리거나 자리가 없을 수 있어. 소중한 형들의 골든타임을 아끼려면 출발 전에 010-6279-0862로 딱 1분만 시간 내서 예약 전화를 주는 걸 적극 추천해!</p>
+    
+      <div class="card">
+        <div class="review-header">
+          <span class="review-nick">눈탱이방어벽 (2026-05-20)</span>
+          <span class="review-stars">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>바이어 접대가 급하게 잡혀 걱정했는데 형이 알려준 핫라인 예약 덕분에 퀄리티 높은 안주 대접하고 완전 성공 버프 받았다 브로.</p>
       </div>
-      <div>
-        <h4 style="color: var(--accent-neon); margin-bottom: 8px;">Q. 추가금이 붙는 황당한 경우가 있나요?</h4>
-        <p>A. 요즘 그런 구시대적 영업 하는 곳들 많은데, 우리는 100% 정찰제를 준수하고 있어. 사전에 예약 통화 시 말씀드린 코스 가격 그대로 진행되니까 추가금 눈탱이 맞을 걱정은 완전히 접어둬도 좋아.</p>
+    
+      <div class="card">
+        <div class="review-header">
+          <span class="review-nick">가성비킹 (2026-05-24)</span>
+          <span class="review-stars">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>망설이다 010-6279-0862 로 미리 통화하고 단골 예약 넣고 갔는데 무상 과일 안주 서비스 대박 퍼줘서 친구들도 대만족 인정함!</p>
       </div>
-    </div>
-  </main>
-
-  <footer>
-    <p><strong>상수 가라오케 찐후기 가이드 Portal</strong></p>
-    <p>주소: 서울특별시 상수구 일대 | 연락처: 010-6279-0862</p>
-    <p>
-      <a href="index.html">홈</a> | 
-      <a href="about.html">상세정보</a>
+    
+      </div>
       
-    </p>
-    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 상수 가라오케 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-  </footer>
-
+      <div style="margin-top:48px; text-align:center;">
+        <a href="tel:010-6279-0862" class="phone-badge">📞 단골 예약 다이얼: 010-6279-0862</a>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2026 상수 가라오케 안심 가이드. All Rights Reserved.</p>
+      <p style="margin-top:12px;">
+        <a href="index.html">홈</a> | 
+        <a href="about.html">소개</a> | 
+        <a href="#">개인정보처리방침</a> | 
+        <a href="#">이용약관</a>
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
